@@ -20,7 +20,7 @@ class Button():
         self.size = size
         x, y = self.pos
         w, h = self.size
-        cv2.rectangle(img, self.pos , (x+w,y+h),(255,0,255),cv2.FILLED)
+        cv2.rectangle(img, self.pos , (x+w,y+h),(0,0,255))
         cv2.putText(img, self.text,(x+20,y+65), 
                     cv2.FONT_HERSHEY_PLAIN, 4, (255,255,255), 4)
         
